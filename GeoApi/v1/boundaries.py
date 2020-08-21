@@ -3,7 +3,7 @@ from flask import jsonify
 import pandas as pd
 import geopandas as gpd
 
-@app.route("/boundary")
+@app.route("/v1/boundary")
 def boundary():
 
     df = pd.DataFrame(
@@ -15,4 +15,9 @@ def boundary():
     gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.Longitude, df.Latitude))
 
     return gdf.head().to_json()
+
+@app.route("/v1/test")
+def test():
+
+    return jsonify("Hello","user")
 
