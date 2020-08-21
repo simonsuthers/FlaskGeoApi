@@ -44,6 +44,7 @@
     <Content Include="GeoApi\templates\about.html" />
     <Content Include="GeoApi\templates\index.html" />
     <Content Include="GeoApi\templates\layout.html" />
+    <Content Include="geopandas\GDAL-2.4.1-cp37-cp37m-win_amd64.whl" />
     <Content Include="README.md" />
     <Content Include="requirements.txt" />
     <Content Include="startup.txt" />
@@ -53,6 +54,7 @@
     <Folder Include="GeoApi\v1\" />
     <Folder Include="GeoApi\static\" />
     <Folder Include="GeoApi\templates\" />
+    <Folder Include="geopandas\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
