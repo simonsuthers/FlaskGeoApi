@@ -8,7 +8,12 @@ def home():
     now = datetime.now()
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 
-    html_content = "<html><head><title>Hello Flask</title></head><body>"
-    html_content += "<strong>Hello Flask!</strong> on " + formatted_now
-    html_content += "</body></html>"
-    return html_content
+    return render_template("index.html", title="Hello Flask", message="Hello, Flask!",  content=" on " + formatted_now)
+
+@app.route('/api/data')
+def get_data():
+    return app.send_static_file('data.json')
+
+@app.route('/about')
+def about():
+    return render_template("about.html", title="About Geo API", content="Example app pge for Flask")

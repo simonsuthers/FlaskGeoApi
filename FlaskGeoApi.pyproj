@@ -36,12 +36,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GeoApi\static\data.json" />
+    <Content Include="GeoApi\static\site.css" />
+    <Content Include="GeoApi\templates\about.html" />
+    <Content Include="GeoApi\templates\index.html" />
+    <Content Include="GeoApi\templates\layout.html" />
     <Content Include="README.md" />
     <Content Include="requirements.txt" />
     <Content Include="startup.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GeoApi\" />
+    <Folder Include="GeoApi\static\" />
     <Folder Include="GeoApi\templates\" />
     <Folder Include="views\" />
   </ItemGroup>
