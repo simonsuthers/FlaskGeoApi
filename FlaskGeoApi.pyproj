@@ -28,6 +28,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="GeoApi\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeoApi\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />
@@ -35,6 +41,8 @@
     <Content Include="startup.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="GeoApi\" />
+    <Folder Include="GeoApi\templates\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
