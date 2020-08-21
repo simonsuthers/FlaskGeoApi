@@ -28,6 +28,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="GeoApi\v1\boundaries.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GeoApi\views.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GeoApi\" />
+    <Folder Include="GeoApi\v1\" />
     <Folder Include="GeoApi\static\" />
     <Folder Include="GeoApi\templates\" />
-    <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
