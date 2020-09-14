@@ -45,6 +45,7 @@
     <Content Include="GeoApi\templates\index.html" />
     <Content Include="GeoApi\templates\layout.html" />
     <Content Include="requirements.txt" />
+    <Content Include="startup.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GeoApi\" />
